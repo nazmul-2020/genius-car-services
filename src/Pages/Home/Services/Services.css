@@ -1,6 +1,6 @@
-.services-title{
-text-align: center;
-color: rgba(89, 43, 226, 0.635);
+.services-title {
+    text-align: center;
+    color: rgba(89, 43, 226, 0.635);
 }
 
 .services-container {
@@ -8,4 +8,21 @@ color: rgba(89, 43, 226, 0.635);
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     margin: 0 50px;
+}
+
+
+/* 
+Make Services Responsive
+*/
+
+@media only screen and (max-width:576px) {
+    .services-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width:778px) {
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
