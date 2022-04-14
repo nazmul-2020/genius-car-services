@@ -6,6 +6,7 @@ const Service = ({ service }) => {
 
     return (
         <div>
+            <img src={img} alt="" />
             <h3>Name : {name}</h3>
             <small>Price : {price}</small>
         </div>
